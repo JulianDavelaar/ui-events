@@ -57,3 +57,16 @@ translate.addEventListener('click', function() {
 translate.addEventListener('animationend', function() {
   translate.classList.remove('and')
 })
+
+
+//development shake
+let shake = document.querySelector('a[href="#development"]')
+
+shake.addEventListener('dblclick', function() {
+  shake.classList.add('dblclick')
+})
+ 
+shake.addEventListener('animationend', function(){
+  shake.classList.remove('dblclick')
+})
+})
