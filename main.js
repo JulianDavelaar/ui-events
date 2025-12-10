@@ -69,4 +69,16 @@ shake.addEventListener('dblclick', function() {
 shake.addEventListener('animationend', function(){
   shake.classList.remove('dblclick')
 })
+
+
+
+//Sprint 5 kleuren
+let kleur = document.querySelector('a[href="#sprint-5"]')
+
+kleur.addEventListener('click', function(){
+kleur.classList.add('kleuren')
+})
+
+kleur.addEventListener('animationend', function(){
+  kleur.classList.remove('kleuren')
 })
