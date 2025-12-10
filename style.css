@@ -189,3 +189,7 @@ a[href="#design"] {
   }
 
   .kleuren {
+    animation-name: kleuren;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
