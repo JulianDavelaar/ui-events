@@ -44,3 +44,16 @@ scale.addEventListener('click', function() {
 scale.addEventListener('animationend', function() {
   scale.classList.remove('scale')
 })
+
+
+
+//& translate
+let translate = document.querySelector('a[href="#and"]')
+
+translate.addEventListener('click', function() {
+  translate.classList.add('and')
+})
+
+translate.addEventListener('animationend', function() {
+  translate.classList.remove('and')
+})
