@@ -193,3 +193,34 @@ a[href="#design"] {
     animation-duration: 3s;
     animation-iteration-count: 1;
   }
+
+
+  /* The Mouseover Rotate */
+  @keyframes rotate {
+    0% {
+      transform: rotate(10deg);
+    }
+
+    25% {
+      transform: rotate(20deg)
+    }
+
+    50% {
+      transform: rotate(30deg);
+    }
+
+    75% {
+      transform: rotate(40deg);
+    }
+
+    100% {
+      transform: rotate(50deg);
+      
+    }
+  }
+
+  .rotate{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }

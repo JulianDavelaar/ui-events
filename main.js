@@ -82,3 +82,15 @@ kleur.classList.add('kleuren')
 kleur.addEventListener('animationend', function(){
   kleur.classList.remove('kleuren')
 })
+
+
+//the mouseover rotate
+let rot = document.querySelector('a[href="#the"]')
+
+rot.addEventListener('mouseover', function(){
+  rot.classList.add('rotate')
+})
+
+rot.addEventListener('animationend', function(){
+rot.classList.remove('rotate')
+})
