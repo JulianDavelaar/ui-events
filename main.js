@@ -90,3 +90,15 @@ let text = document.querySelector('a[href="#fix"]')
 text.addEventListener('click', function(){
   text.textContent('Fixed!')
 })
+
+
+//the mouseover rotate
+let rot = document.querySelector('a[href="#the"]')
+
+rot.addEventListener('mouseover', function(){
+  rot.classList.add('rotate')
+})
+
+rot.addEventListener('animationend', function(){
+rot.classList.remove('rotate')
+})
