@@ -82,3 +82,11 @@ kleur.classList.add('kleuren')
 kleur.addEventListener('animationend', function(){
   kleur.classList.remove('kleuren')
 })
+
+
+// Fix text-change
+let text = document.querySelector('a[href="#fix"]')
+
+text.addEventListener('click', function(){
+  text.textContent('Fixed!')
+})
