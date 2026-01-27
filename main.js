@@ -72,6 +72,7 @@ shake.addEventListener('animationend', function(){
 
 
 
+
 //Sprint 5 kleuren
 let kleur = document.querySelector('a[href="#sprint-5"]')
 
@@ -84,12 +85,17 @@ kleur.addEventListener('animationend', function(){
 })
 
 
+
 // Fix text-change
 let text = document.querySelector('a[href="#fix"]')
 
 text.addEventListener('click', function(){
-  text.textContent('Fixed!')
+    text.textContent = text.textContent === 'fixed' ? 'Fix' : 'fixed';
+
 })
+
+
+
 
 
 //the mouseover rotate
