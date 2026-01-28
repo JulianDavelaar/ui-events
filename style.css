@@ -199,16 +199,6 @@ a[href="#design"] {
 
 
 
-  /* fix text change */
-  @keyframes fix {
-    0% {
-      
-    }
-
-    50% {
-      
-    }
-  }
 
 
   /* The Mouseover Rotate */
@@ -239,3 +229,57 @@ a[href="#design"] {
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
   }
+
+
+
+  /* 'flow' flip link */
+  @keyframes flipflow {
+    0%{
+      transform: rotateX(0deg) ;
+    }
+
+    50%{
+      transform: rotateX(180deg) ;
+    }
+
+    100%{
+      transform: rotateX(0deg);
+    }
+  }
+
+
+  .flipflow {
+    animation: flipflow;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+
+
+  /* user keyup */
+
+.green {
+  color: green !important;
+}
+
+.blue {
+  color: blue !important;
+}
+
+.red {
+  color: red !important;
+}
+
+
+/* inflate interface link */
+a[href="#interface"] {
+  color: var(--secondary);  
+  background-color: var(--secondary);
+  transition: transform 1.5s ease;
+}
+
+.blowup {
+  background-color: #050840;
+  transform: scale(4);
+  transition: transform 1.5s ease;
+}
+

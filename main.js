@@ -97,7 +97,6 @@ text.addEventListener('click', function(){
 
 
 
-
 //the mouseover rotate
 let rot = document.querySelector('a[href="#the"]')
 
@@ -108,3 +107,57 @@ rot.addEventListener('mouseover', function(){
 rot.addEventListener('animationend', function(){
 rot.classList.remove('rotate')
 })
+
+
+
+//'flow' flip link mouseDown
+let flip = document.querySelector('a[href="#flow"]')
+
+flip.addEventListener("mousedown", flipdown)
+flip.addEventListener("mouseup", flipup)
+
+function flipdown() {
+  flip.classList.add("flipflow")
+}
+
+function flipup() {
+  flip.classList.remove("flipflow")
+}
+ 
+flip.addEventListener("animationend", function(){
+  flipflow.classList.remove("flipflow")
+})
+
+
+//'user' link veranderen bij key press
+let button = document.querySelector('a[href="#user"]')
+
+document.addEventListener('keydown', makeGreen)
+
+function makeGreen(e) {
+  button.classList.remove('green', 'red', 'blue' )
+
+  if (e.key === 'g') {
+    button.classList.add('green')
+  }
+
+  if (e.key === 'r') {
+    button.classList.add('red')
+  }
+
+  if (e.key === 'b') {
+    button.classList.add('blue')
+  }
+}
+ 
+
+// inflate interface link
+let inflate = document.querySelector('a[href="#interface"]')
+
+  document.addEventListener("keydown", () => {
+    inflate.classList.add('blowup')
+  })
+
+  document.addEventListener("keyup", () => {
+    inflate.classList.remove("blowup")
+  })
